@@ -1,0 +1,410 @@
+@media (max-width: 768px) {
+  .kkkk{
+    width: 900px;
+    margin-left: -350px;
+  }
+
+  .show{
+    width: 400px !important;
+    margin-left: 400px !important;
+
+  }
+  .option2-button{
+    position: relative;
+    left: -90px;
+  }
+
+  .form-group{
+    width: 300px !important;
+  }
+  .search-input1{
+    width: 200px !important;
+    margin-left: 20px !important;
+  }
+  .container12{
+    width: 350px !important;
+  }
+}
+
+
+
+
+
+
+.Backimg {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  margin-top: 90px;
+}
+
+.kkkk {
+  position: relative;
+}
+
+.kkkk::before {
+
+  content: "";
+  background:  url("../../Images/eng.jpg") fixed center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  filter: blur(1px); /* Adjust the blur value as needed */
+  z-index: -1;
+  
+}
+
+/* The rest of your styles for .kkkk element */
+
+/* .selldiv {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  margin-right: 100px;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px #26214a1a;
+} */
+
+.sell-item-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 200px; */
+  margin: auto;
+}
+
+.selliteminput {
+  width: 100%;
+  max-width: 220px;
+  height: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  margin-top: -20px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+/* styles.css */
+
+/* Custom styles for the Swal */
+.swal-custom-style {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  color: #333;
+  border: 2px solid #e83e8c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swal-custom-style .swal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e83e8c;
+}
+
+.swal-custom-style .swal-text {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.selliteminput:hover {
+  border: 2px solid rgb(117, 176, 243);
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.selliteminput:active {
+  transform: scale(0.95);
+}
+
+.selliteminput:focus {
+  border: 2px solid rgb(117, 176, 243);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.Sellitem-Placeholder {
+  display: flex;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+.sd1 {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 350px;
+  font-size: 18px;
+}
+
+.sellcardiv {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  margin-right: 100px;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px #26214a1a;
+  flex-direction: column;
+  margin-top: -470px;
+}
+
+.sell-item-form {
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin: auto; */
+  /* justify-content: center; */
+  margin-top: -330px;
+  margin-left: 130px;
+}
+
+.Prebutton {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: #ff00004b;
+  font-family: 'Nunito', sans-serif;
+
+  border-radius: 20px;
+  /* letter-spacing: 1px; */
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(196, 196, 196);
+
+  /* background: #fff; */
+}
+
+.Prebuttonutton > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.Prebutton:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+  color: white;
+}
+
+.Prebutton:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+  background-color: red;
+  color:white;
+  border-radius: 20px;
+}
+#sssd{
+  box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  border-radius: 20px;
+  height: 450px;
+
+}
+.cardddd {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  top: 200px;
+  left: 300px
+  ;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 600px;
+  height: 450px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+
+.sdsd{
+  font-family: "Nunito", sans-serif;
+
+}
+
+.Nxtbutton {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: -37px;
+  background-color: #eeeeee4b;
+  border-radius: 20px;
+  /* letter-spacing: 1px; */
+  transition: all 0.2s linear;
+    font-family: 'Nunito', sans-serif;
+
+  cursor: pointer;
+  border: none;
+  background-color: rgb(196, 196, 196);
+  /* background: #fff; */
+}
+
+.Nxtbutton > svg {
+  margin-left: 5px;
+  margin-right: -5px;
+  font-size: 20px;
+  transition: all 0.4s ease-out;
+}
+
+.Nxtbutton:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(5px);
+}
+
+.Nxtbutton:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+  color: white;
+  border-radius: 20px;
+  background-color: red;
+}
+
+
+.prevbut{
+  font-family: 'Nunito', sans-serif;
+}
+.sellsubmit {
+  width: fit-content;
+  height: 45px;
+  background: #ffffff0d;
+  border-radius: 8px;
+  border: 2px solid #334b79;
+  font-size: 15px;
+  font-weight: bold;
+  color: #334b79;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 25px;
+  z-index: 1;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.sellsubmit:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.sellsubmit:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: #334b79;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.sellsubmit:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sellsubmit:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.sellsubmit:hover:after {
+  top: 0;
+  left: 50%;
+}
+
+
+
+@media (max-width:360px) {
+  .description{
+    width: 300px !important;
+    margin-left: 380px !important;
+    margin-top: 100px !important;
+  }
+.form-group{
+  margin-left: -0px !important;
+}
+
+.option3-button{
+  margin-left: 20px !important;
+}
+
+}

@@ -1,0 +1,861 @@
+@media (max-width: 768px) {
+ .best {
+  margin-top: -650px;
+  margin-left: 770px;
+  font-size: 60px !important;
+ }
+.catch{
+  position: relative;
+  left: -50px;
+}
+ .puppies{
+  width: 600px !important;
+margin-left: -100px !important; }
+
+
+ .dogImage {
+width: 600px !important;
+margin-left: -50px !important;
+
+} 
+
+.pawwww{
+  width: 50px !important;
+}
+.with{
+  width: 140px !important;
+  font-size: 50px !important;
+  margin-left:15px !important;
+
+}
+
+.buy{
+  max-width: 400px;
+  position: relative;
+  left: -30px;
+}
+.descc{
+  position: relative;
+  font-size: 24px !important;
+  margin-left: 00px !important;
+  top: -100px;
+  max-width: px;
+}
+.buyP{
+  width: 200px !important;
+  height: 300px !important;
+  position: relative;
+  top: -230px !important;
+  left: -00px !important;
+}
+
+
+
+}
+
+@media (max-width: 360px) {
+
+  .loader{
+    margin-left: -20px ;
+  }
+  .openpagediv{
+    max-width: 360px;
+  }
+
+  .best {
+   margin-top: 0px;
+   margin-left: 800px;
+   font-size: 30px;
+  }
+  .with{
+    position: relative;
+    left: -0px;
+  }
+
+  .puppies{
+    position: relative;
+    max-width: 200px;
+    left: 150px;
+    top: -160px;
+  }
+
+.buy{
+  max-width: 350px;
+  position: relative;
+  left: -65px;
+  top: 0 !important;
+}
+
+.buyP{
+  max-width: 300px;
+  position: relative;
+  left: -00px;
+margin-top: -00px;}
+
+.descc{
+  position: relative;
+  top: -150px;
+  left: -10px;
+  font-size: 24px !important;
+}
+
+.dogImage {
+  /* Use the ssad image as a background image */
+width: 1200px !important;
+height: 10px;
+
+}
+ }
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .best {
+    margin-top: -600px;
+    margin-left: 400px;
+    font-size: 30px;
+
+   }
+   .with{
+    font-size: 30px;
+   }
+  /* Adjust other styles for medium screens */
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .dogImage {
+      height: 700px;
+      margin-left: -752px;
+  }
+  /* Adjust other styles for large screens */
+}
+
+.dogImage{
+    height: 700px;
+    margin-left: -751px;
+    width: 155%;
+
+
+}
+.pawwww{
+  width: 50px;
+    height: 50px;
+    animation: shake 2s infinite;
+}
+.with {
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    background: red;
+    width: 200px; /* Adjust the width as per your preference */
+    display: inline-block;
+    z-index: 2;
+    margin-left: 100px;
+    border-radius: 20px;
+  }
+  
+  .catch{
+    margin-top: 20px;
+    margin-left: 60px;
+text-align: left;    
+font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .paw {
+    position: absolute;
+    top: 120%;
+    left: 12%;
+    height: 180px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: 2;
+    animation: fade 3s ease-in-out infinite;
+
+  }
+
+  .linees{
+    margin-top: 400px;
+    margin-left: -60px;
+    width:1300px;
+    height: 400px;
+    z-index: 1;
+    }
+  
+  .paw2 {
+    position: absolute;
+    top: 380%;
+    left: 90%;
+    height: 150px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: 2;
+    animation: fade 3s ease-in-out infinite;
+  }
+
+  .paw3 {
+    position: absolute;
+    top: 130%;
+    left: 10%;
+    height: 150px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: 2;
+    animation: fade 3s ease-in-out infinite;
+  }
+  
+  
+
+.dogText{
+    margin-top: -600px;
+    margin-left: -800px;
+}
+
+.best{
+    font-size: 60px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.puppies {
+    padding: 30px;
+    background-color: #ff9100;
+    margin-top: 300px;
+    width: 800px;
+    margin-left: 220px;
+    position: relative;
+    z-index: 1; /* Set a higher z-index value to bring it to the front */
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+
+
+  }
+
+  .viewButton {
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+margin-top: 40px;
+margin-right: 800px;
+ color: white;
+    font-size: 24px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .viewButton:hover {
+    background-color: darkred;
+  }
+  .viewButton1 {
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+margin-top: 60px;
+margin-left: 400px;
+ color: white;
+    font-size: 24px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .viewButton1:hover {
+    background-color: darkred;
+  }
+
+  .viewButton2 {
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+margin-left: -500px;
+margin-top: 60px;
+ color: white;
+    font-size: 24px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .viewButton2:hover {
+    background-color: darkred;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(-10deg);
+    }
+    80% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .paww {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    transform: rotate(90deg);
+    animation: shake 3s infinite;
+    color: red;
+  }
+
+  .adopt {
+    position: relative;
+    width: 1200px;
+    height: 550px;
+    margin-left: 70px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    background-image: url("../../Images/cir.svg");
+
+  }
+  
+  .adopt1 {
+    position: relative;
+    top: 50px; /* Adjust the value to move it down */
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 450px;
+    margin-left: 100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  #gooo{
+display: flex;
+flex-direction: row;
+    position: relative;
+    top: 2200px;
+  }
+
+  .goldver {
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3) inset;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .goldver:hover {
+    transform: translateZ(20px);
+  }
+  
+  
+    .goldverr{
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+      
+      }
+
+  .contcard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+position: relative;
+top: 150px;
+margin-left: 50px;
+  }
+
+  .ado{
+    width:500px;
+    height: 850px;
+    position: relative;
+    left: -300px;
+    margin-top: -00px;
+  }
+.pstyleee{
+  position:relative;
+   top:-140px;
+  font-family:Nunito;
+     font-size:24px;
+      color:#FF3627
+}
+.pst{
+  position:relative;
+  font-family:Nunito;
+     font-size:24px;
+      color:#FF3627
+}
+@keyframes colorChange {
+  10% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: rgb(8, 24, 29); }
+  100% { color: rgb(79, 3, 82); }
+}
+
+.twelve {
+  font-size:60px;
+   position:relative;
+    top:70px;
+}
+
+.verifcont {
+  box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3) inset;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.verifcont:hover {
+  transform: translateZ(40px);
+  
+}
+
+
+
+  .desc{
+    font-family: 'Nunito', sans-serif;
+font-size: 40px;
+color: rgb(0, 0, 0);
+margin-top: -300px;
+margin-left: 450px;
+  }
+  
+  .descc{
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+font-size: 40px;
+color: rgb(0, 0, 0);
+margin-left: -500px;
+padding-top: 150px;
+  }
+
+ 
+
+  .buy{
+    position: relative;
+    top: 150px;
+    width: 1200px;
+    height: 550px;
+    margin-left: 70px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    background-image: url("../../Images/cir.svg");
+
+  }
+  .adoptP{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    top: 20px;
+    border-radius: 20px;
+  }
+  .buyP{
+    position: relative;
+    top: -280px;
+    width: 300px;
+    left: 300px;
+    height: 400px;
+    border-radius: 20px;
+  }
+
+  .buy1{
+    position: relative;
+    box-shadow: 0px 2px 10px 4px rgba(0,0,0,0.3);
+    width: 350px;
+    height: 450px;
+    left: 700px;
+    margin-top: -340px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+
+  .sellorverify{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin-left: 0px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    
+  }
+
+
+  .seller{
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 30px;
+    left: 200px;
+    height: 500px;
+    width: 400px;
+    background-color: #ffffff;
+  }
+
+  .verifier{
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 30px;
+    left: 340px;
+    height: 500px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+  }
+
+ 
+
+  .verifierImg{
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
+  .verifyButton{
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+ color: white;
+    font-size: 24px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 70px;
+    right: 130px;
+  }
+
+  .verifyButton:hover {
+    background-color: darkred;
+  }
+  .sellerImg{
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .sellButton{
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+ color: white;
+    font-size: 24px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 70px;
+    right: 130px;
+  }
+
+  .sellButton:hover {
+    background-color: darkred;
+  }
+
+  .sellButton1{
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+ color: white;
+    font-size: 24px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    right: 0px;
+  }
+
+  .sellButton1:hover {
+    background-color: darkred;
+  }
+
+
+
+
+
+  .selcard{
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 30px;
+    left: 200px;
+    height: 500px;
+    width: 400px;
+    background-color: #ffffff;    
+
+  }
+
+
+  .verifycard{
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 70px;
+    left: 790px;
+    height: 300px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+
+  .verifyButton1{
+    background-color: red;
+    font-family: 'Nunito', sans-serif;
+ color: white;
+    font-size: 24px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    right: 0px;
+  }
+
+  .verifyButton1:hover {
+    background-color: darkred;
+  }
+
+
+  .style-0 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.style-1 {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.style-2 {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.style-3 {
+    box-shadow: none;
+    text-decoration: none solid rgb(240, 67, 54);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out 0s;
+    color: rgb(240, 67, 54);
+    outline: rgb(240, 67, 54) none 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style-4 {
+    height: auto;
+    max-width: 100%;
+    border: 0px none rgb(240, 67, 54);
+    border-radius: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all 0.4s linear 0s;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    vertical-align: middle;
+    border-style: none;
+}
+
+.style-5 {
+    box-sizing: border-box;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    text-align: right;
+    z-index: 1;
+}
+
+.style-6 {
+    box-shadow: none;
+    text-decoration: none solid rgb(240, 67, 54);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out 0s;
+    background-image: url('https://themebeyond.com/demo/img/blog/blog_tag_shape.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-flex;
+    align-items: center;
+    min-width: 138px;
+    min-height: 53px;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgb(240, 67, 54);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: Nunito, sans-serif;
+    outline: rgb(240, 67, 54) none 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style-7 {
+    box-sizing: border-box;
+}
+
+.style-8 {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.style-9 {
+    box-sizing: border-box;
+    list-style: outside none disc;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.style-10 {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgb(131, 129, 129);
+    list-style: outside none none;
+}
+
+.style-11 {
+    box-sizing: border-box;
+    margin-right: 5px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 14px;
+}
+
+.style-12 {
+    box-shadow: none;
+    text-decoration: none solid rgb(131, 129, 129);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out 0s;
+    color: rgb(131, 129, 129);
+    outline: rgb(131, 129, 129) none 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style-13 {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgb(131, 129, 129);
+    list-style: outside none none;
+}
+
+.style-14 {
+    box-sizing: border-box;
+    margin-right: 5px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 14px;
+}
+
+.style-15 {
+    box-sizing: border-box;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-family: Nunito, sans-serif;
+    color: rgb(10, 48, 58);
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28.8px;
+}
+
+.style-16 {
+    box-shadow: none;
+    text-decoration: none solid rgb(10, 48, 58);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out 0s;
+    color: rgb(10, 48, 58);
+    outline: rgb(10, 48, 58) none 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style-17 {
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(103, 102, 102);
+    margin-top: 0px;
+}
+
+.style-18 {
+    box-shadow: none;
+    text-decoration: none solid rgb(10, 48, 58);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out 0s;
+    color: rgb(10, 48, 58);
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    outline: rgb(10, 48, 58) none 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style-19 {
+    height: auto;
+    max-width: 20px;
+    border: 0px none rgb(10, 48, 58);
+    border-radius: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    margin-left: 6px;
+    vertical-align: middle;
+    border-style: none;
+}

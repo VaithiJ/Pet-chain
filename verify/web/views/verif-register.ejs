@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+	<meta name="theme-color" content="#002f34">
+    <title>PetChain  - a blockchain enabled pet marketplace</title>
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css">
+
+<script>
+
+function validate()
+{
+	var Frm = document.PasuMarketForm;
+
+	if(Frm.txtName.value == "")
+	{
+		Swal.fire({
+		  text: "Enter your Name.",
+		  didClose: () => {
+			Frm.txtName.focus();
+			},
+		})
+		
+		return false;
+	}
+
+	if(Frm.txtMobileNo.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Mobile No.",
+		  didClose: () => {
+			Frm.txtMobileNo.focus();
+			},
+		})
+		
+		return false;
+	}
+	else
+	{
+		var regex=/^[0-9]+$/;
+		if(!(Frm.txtMobileNo.value.match(regex))) 
+		{
+			Swal.fire({
+			  text: 'Invalid Mobile No. Enter your 10 digit Mobile No.',
+			  didClose: () => {
+				Frm.txtMobileNo.focus();
+				},
+			})
+
+			return false;
+		}
+
+		if((Frm.txtMobileNo.value).length != 10)
+		{
+			Swal.fire({
+			  text: 'Invalid Mobile No. Enter your 10 digit Mobile No.',
+			  didClose: () => {
+				Frm.txtMobileNo.focus();
+				},
+			})
+
+			return false;
+		}
+	}
+
+	if(Frm.txtEmailID.value == "")
+	{
+		Swal.fire({
+		  text: "Enter your Email ID.",
+		  didClose: () => {
+			Frm.txtEmailID.focus();
+			},
+		})
+		
+		return false;
+	}
+
+	if(Frm.txtPassword.value == "")
+	{
+		Swal.fire({
+		  text: "Enter your Password",
+		  didClose: () => {
+			Frm.txtPassword.focus();
+			},
+		})
+		
+		return false;
+	}
+	else
+	{
+		if((Frm.txtPassword.value).length < 8)
+		{
+			Swal.fire({
+			  text: 'Password should be atleast 8 character length',
+			  didClose: () => {
+				Frm.txtPassword.focus();
+				},
+			})
+
+			return false;
+		}
+	}
+
+	if(Frm.txtConfirmPassword.value == "")
+	{
+		Swal.fire({
+		  text: "Please confirm your Password",
+		  didClose: () => {
+			Frm.txtConfirmPassword.focus();
+			},
+		})
+		
+		return false;
+	}
+	else
+	{
+		if(Frm.txtPassword.value != Frm.txtConfirmPassword.value)
+		{
+			Swal.fire({
+			  text: "Your Password and Confirm Password are not matching",
+			  didClose: () => {
+				Frm.txtConfirmPassword.focus();
+				},
+			})
+			
+			return false;
+		}
+	}
+
+	if(Frm.txtAadharNo.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Aadhar No.",
+		  didClose: () => {
+			Frm.txtAadharNo.focus();
+			},
+		})
+		
+		return false;
+	}
+	else
+	{
+		var regex=/^[0-9]+$/;
+		if(!(Frm.txtAadharNo.value.match(regex))) 
+		{
+			Swal.fire({
+			  text: 'Invalid Aadhar No. Enter your 12 digit Mobile No.',
+			  didClose: () => {
+				Frm.txtAadharNo.focus();
+				},
+			})
+
+			return false;
+		}
+
+		if((Frm.txtAadharNo.value).length != 12)
+		{
+			Swal.fire({
+			  text: 'Invalid Aadhar No. Enter your 12 digit Aadhar No.',
+			  didClose: () => {
+				Frm.txtAadharNo.focus();
+				},
+			})
+
+			return false;
+		}
+	}
+
+	if(Frm.txtQualification.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Qualification",
+		  didClose: () => {
+			Frm.txtQualification.focus();
+			},
+		})
+		
+		return false;
+	}
+
+	if(Frm.txtAddress.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Address",
+		  didClose: () => {
+			Frm.txtAddress.focus();
+			},
+		})
+		
+		return false;
+	}
+	
+}
+
+
+</script>
+	
+</head>
+
+<body class="d-flex flex-column bodyh100 bglight">
+    
+<header>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+		<div class="container">
+			<% include verif-header %>
+		</div>
+	</nav>
+</header>
+
+
+<main role="main" class="flex-shrink-0">
+<form name="PasuMarketForm" method="post" action="/verif-register" onsubmit="return validate()">
+	<div class="container header-container-100">
+
+		<div class="row justify-content-center">
+			<div class="col-md-5 col-lg-5">
+
+				<div class="mb-3 page-header-01">
+					Verification Agent Registration 
+				</div>
+
+				<div class="mb-3">
+					<span><span style="color: red;">*</span></span> marked fields are mandatory
+				</div>
+
+				<div class="card signin-card">
+					<div class="card-body signin-card-body">
+						<div class="form-group">
+							<label for="txtName" class="formlabel01">Enter Your Name <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-12 displayflex">
+								<input type="text" class="form-control" id="txtName" Name="txtName" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtMobileNo" class="formlabel01">Mobile No. <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-6 col-lg-6 col-6 displayflex">
+								<input type="number" class="form-control" id="txtMobileNo" Name="txtMobileNo" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtEmailID" class="formlabel01">Email ID <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-6 displayflex">
+								<input type="text" class="form-control" id="txtEmailID" Name="txtEmailID" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtPassword" class="formlabel01">Choose your Password <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-6 displayflex">
+								<input type="password" class="form-control" id="txtPassword" Name="txtPassword" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtConfirmPassword" class="formlabel01">Confirm your Password <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-6 displayflex">
+								<input type="password" class="form-control" id="txtConfirmPassword" Name="txtConfirmPassword" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtAadharNo" class="formlabel01">Aadhar No. <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-6 displayflex">
+								<input type="number" class="form-control" id="txtAadharNo" Name="txtAadharNo" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtQualification" class="formlabel01">Qualification <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-8 col-lg-8 col-6 displayflex">
+								<input type="text" class="form-control" id="txtQualification" Name="txtQualification" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtAddress" class="formlabel01">Address <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-10 col-lg-10 col-8 displayflex">
+								<textarea class="form-control" id="txtAddress" Name="txtAddress" rows="3"></textarea>
+							</div>
+						</div>
+
+					</div>
+					<div class="card-footer signin-card-footer">
+						<button type="submit" class="btn pm-btn"">
+							Register
+						</button>
+					</div>
+					
+				</div>
+			
+			</div>
+		</div>
+
+	</div>
+</form>
+</main>
+
+<footer class="footer mt-auto myfooter">
+	<% include footer %>
+</footer>
+
+
+<script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/sweetalert2/sweetalert2.min.js"></script>
+<script src="../public/js/axios.min.js"></script>
+
+</body>
+</html>

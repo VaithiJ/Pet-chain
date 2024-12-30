@@ -1,0 +1,217 @@
+.nav-containerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: -20px;
+
+  
+  
+}
+
+
+
+
+.logo1 {
+  margin-right: 2rem;
+
+}
+
+.logo11 {
+  display: flex;
+  width: 300px;
+  height: auto;
+  /* margin-top: 5px; */
+  z-index: 10;
+/* background-image:url(./ts.png); */
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 10px; */
+}
+
+.logo a {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 100px;
+ 
+
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.sub-nav a {
+  margin: 0 1.8rem;
+
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.sub-nav a:hover {
+  color: #e72626;
+}
+
+.headsea {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-left: 500px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.headsea input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.headsea button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+.right-icons a {
+  margin-left: 1.5rem;
+  color: #000000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: -8px;
+}
+.right-icons {
+  /* margin-right: 30px; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.logpopup {
+  border-radius: 10px;
+  position: fixed;
+  top: 100%; /* Initially set to bottom of the screen */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 3px 0px 9px 3px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 100px;
+  margin-top: 70px;
+  margin-left: 400px;
+  animation-name: fade-in;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.logButton {
+  font-family: "Nunito", sans-serif; /* 'Nunito' as the preferred font family */
+  position: relative;
+  top: 25px;
+  left: 0px;
+  margin: 0 0px;
+  padding: 10px 20px;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.logButton:hover {
+  animation: colorChange 0.5s infinite alternate;
+}
+
+.logButton.selected {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.popup {
+  position: absolute;
+  right: 80px;
+  top: 50px;
+  width: 400px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+    .style-0 {
+        border: 0.666667px solid rgb(213, 218, 223);
+        border-radius: 4px;
+        padding: 1.6px 8px;
+        cursor: pointer;
+        margin: 0px 0px 0px 16px;
+        box-sizing: border-box;
+        margin-right: 790px;
+        margin-top: 10px;
+    }
+
+    .style-1 {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 119px;
+    }
+
+    .style-2 {
+        margin: 0px;
+        font-size: 14px;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        line-height: 20.02px;
+        color: rgb(33, 37, 41);
+        box-sizing: border-box;
+    }
+
+    .style-3 {
+        user-select: none;
+        width: 1em;
+        height: 24px;
+        display: block;
+        fill: #EF6E0B;
+        flex-shrink: 0;
+        transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        font-size: 24px;
+        color: #EF6E0B;
+        margin: 0px 0px 0px 4px;
+        box-sizing: border-box;
+    }
+
+    .style-4 {
+        box-sizing: border-box;
+    }
+
+    /* Add necessary styling to position the popup and make it look like a search bar */
+.citysearch1{
+  margin-left: -800px;
+  margin-top: 30%;
+  /* z-index: 9999; */
+}

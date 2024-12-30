@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+	<meta name="theme-color" content="#002f34">
+    <title>PetChain - online Pets marketplace</title>
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css">
+
+<script>
+
+function validate()
+{
+	var Frm = document.PasuMarketForm;
+
+	if(Frm.txtMobileNo.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Mobile No.",
+		  didClose: () => {
+			Frm.txtMobileNo.focus();
+			},
+		})
+		
+		return false;
+	}
+	else
+	{
+		var regex=/^[0-9]+$/;
+		if(!(Frm.txtMobileNo.value.match(regex))) 
+		{
+			Swal.fire({
+			  text: 'Invalid Mobile No. Enter your 10 digit Mobile No.',
+			  didClose: () => {
+				Frm.txtMobileNo.focus();
+				},
+			})
+
+			return false;
+		}
+
+		if((Frm.txtMobileNo.value).length != 10)
+		{
+			Swal.fire({
+			  text: 'Invalid Mobile No. Enter your 10 digit Mobile No.',
+			  didClose: () => {
+				Frm.txtMobileNo.focus();
+				},
+			})
+
+			return false;
+		}
+	}
+	
+	if(Frm.txtPassword.value=="")
+	{
+		Swal.fire({
+		  text: "Enter your Password",
+		  didClose: () => {
+			Frm.txtPassword.focus();
+			},
+		})
+		
+		return false;
+	}
+
+
+}
+
+</script>
+	
+</head>
+
+<body class="d-flex flex-column bodyh100 bglight">
+    
+<header>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+		<div class="container">
+			<% include verif-header %>
+		</div>
+	</nav>
+</header>
+
+<main role="main" class="flex-shrink-0">
+<form novalidate name="PasuMarketForm" method="post" action="/verif-login" onsubmit="return validate()">
+	<div class="container header-container">
+
+		<div class="row justify-content-center msearch-row">
+			<div class="col-md-5 col-lg-5">
+
+				<div class="card signin-card">
+					<div class="card-header signin-card-header">
+						Verification Agent Login
+					</div>
+					<div class="card-body signin-card-body">
+						<div class="form-group">
+							<label for="txtMobileNo" class="formlabel01">Mobile No. <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-6 col-lg-6 col-12 displayflex">
+								<input type="number" class="form-control" id="txtMobileNo" Name="txtMobileNo" value="<%=data.MobileNo%>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtPassword" class="formlabel01">Password <span style="color: red;">*</span></label>
+							<div class="form-col-width col-md-6 col-lg-6 col-12 displayflex">
+								<input type="password" class="form-control" id="txtPassword" Name="txtPassword" value="">
+							</div>
+						</div>
+						<div class="errormessage"><%=data.MessageDes%></div>
+					</div>
+					<div class="card-footer signin-card-footer">
+						<button type="submit" class="btn pm-btn btn-width-80p">
+							Login
+						</button>
+					</div>
+				</div>
+
+			
+			</div>
+		</div>
+
+	</div>
+</form>
+</main>
+
+
+<footer class="footer mt-auto myfooter">
+	<% include footer %>
+</footer>
+
+
+<script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/sweetalert2/sweetalert2.min.js"></script>
+
+</body>
+</html>

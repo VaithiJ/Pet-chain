@@ -1,0 +1,217 @@
+@media (max-width: 768px){
+  .topp-picks-section {
+    display: none;
+  }
+}
+
+
+.card-1 {
+  filter: none;
+  opacity: 1;
+  transition: filter 0.3s, opacity 0.3s;
+  position: relative;
+}
+
+.card-1:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.Collectionpicks:hover .card-1:not(:hover) {
+  filter: blur(1px);
+  opacity: 0.6;
+}
+
+
+.card-1:hover h3 {
+  filter: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.card-1 h3 {
+  position: absolute;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Other styles remain the same */
+
+
+/* Other styles remain the same */
+
+
+/* Other styles remain the same */
+
+
+
+/* Adjust the blur and opacity values to your preference */
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  /* width: 90%; */
+  /* margin: auto; */
+}
+
+.Collectionpicks{
+margin-left: 55px;
+}
+
+.grid-container1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card-1{
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  height: 280px;
+}
+
+.small-card {
+  /* grid-column: span 0; */
+  width: 390px;
+  height: 280px;
+  /* margin-right: 200px; */
+}
+.imgsmallcard{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.large-card {
+  width: 750px;
+  height: 280px; /* Adjust the height as needed */
+  margin-right: -10px;
+  /* overflow: hidden; */
+}
+
+.imglargecard {
+ border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.medium-card {
+  width: 200px;
+  height: 280px;
+  margin-left: -10px;
+}
+
+.card-large-card img{
+  /* object-fit: fill; */
+}
+
+
+
+
+
+
+
+.small-card1 {
+ 
+  width: 200px;
+  height: 280px;
+  
+}
+
+.medium-card1 {
+ 
+  width: 230px;
+  height: 280px;
+  margin-left: -10px;
+  
+}
+
+.small-card2 {
+ 
+  width: 700px;
+  height: 280px;
+  margin-left: -10px;
+  
+}
+
+
+.viewallbut {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  margin: auto;
+}
+
+.viewallbut {
+  --primary-color: #111;
+  --hovered-color: #c84747;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.viewallbut p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color)
+}
+
+.viewallbut::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.viewallbut p::before {
+  position: absolute;
+/*   box-sizing: border-box; */
+  content: "View All";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.viewallbut:hover::after {
+  width: 100%;
+}
+
+.viewallbut:hover p::before {
+  width: 100%;
+}
+
+.viewallbut:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color)
+}
+
+.viewallbut svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}

@@ -1,0 +1,85 @@
+@media (max-width:360px) {
+  .sign-in-page{
+    width: 310px;
+    left: 174px !important;
+    top: -60px;
+  }
+}
+
+.sign-in-page {
+  position: relative;
+  max-width: 400px;
+  margin: 160px 100px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  left: 200px;
+}
+
+.signcat {
+  position: absolute;
+  top: 0;
+  left: -110px;
+  width: 1400px;
+  height: 700px;
+  z-index: -1;
+  margin-top: -70px;
+}
+
+
+.sign-in-page h2 {
+  text-align: center;
+}
+
+.signform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sign-in-page form > div {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+.signlab {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.signinp,
+.signsel {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signbut[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fdfdfd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signbut[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.sign-in-page .already-have-account {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-in-page .already-have-account a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-in-page .already-have-account a:hover {
+  text-decoration: underline;
+}

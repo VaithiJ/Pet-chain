@@ -1,0 +1,31 @@
+.imgcert{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: -100px;
+}
+
+.padd{
+    font-family: "Nunito", sans-serif;
+    
+
+}
+.addimageforpet{
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    left: 150px;
+}
+
+.addcertiforpet{
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 250px;
+    border-radius: 20px;
+
+
+}

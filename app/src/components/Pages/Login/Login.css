@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  
+  .previewwpet{
+    display: none;
+  }
+  .login-in-page{
+    margin-left: -150px !important;
+  }
+  .sign-in-page{
+    margin-left: -170px;
+  }
+}
+
+
+
+.login-in-page {
+    position: relative;
+    max-width: 400px;
+    margin: 160px 100px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+
+    border-radius: 20px;
+    text-align: center;
+    left:200px;
+    top:40px
+  }
+  
+  .logincat {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 1400px;
+    height: 700px;
+    z-index: -1;
+    margin-top: -70px;
+  }
+  
+  .login-in-page h2 {
+    text-align: center;
+  }
+  
+  .loginform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .loginform > div {
+    margin-bottom: 10px;
+  }
+  
+  .loginlab {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+
+  .previewwpet{
+    position: relative;
+    left: 50px;
+    top:100px;
+width: 500px; 
+height: 500px; }
+  .loggg{
+    font-family: 'Nunito', sans-serif;
+  }
+  .logininp,
+  .loginsel {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+  
+  .loginbut[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loginbut[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .login-in-page > div {
+    margin-top: 20px;
+
+  }
+  
+  .login-in-page > div a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-in-page > div a:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 360px) {
+    .login-in-page{
+      left: 150px;
+      top: -50px;
+    }
+  }

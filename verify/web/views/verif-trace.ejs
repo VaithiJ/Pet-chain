@@ -1,0 +1,320 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+	<meta name="theme-color" content="#002f34">
+    <title>PetChain  - a blockchain enabled pet marketplace</title>
+	<link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../public/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="../../public/sweetalert2/sweetalert2.min.css">
+
+<script>
+
+function validate()
+{
+	var Frm = document.PasuMarketForm;
+}
+
+
+function viewFile(FileName, FileHash)
+{
+console.log(FileName)
+console.log(FileHash)
+	document.getElementById('FileViewModelBody').innerHTML="<iframe id='iframe_FileView' src='' frameborder='0' height='400px' width='100%'></iframe>"
+	document.getElementById('iframe_FileView').src="/verifViewFile?FileName="+FileName+"&FileHash="+FileHash;
+	$('#FileViewModel').modal('show');
+}
+
+
+</script>
+	
+</head>
+
+<body class="d-flex flex-column bodyh100 bglight">
+    
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+			<div class="container">
+				<% include verif-header %>
+			</div>
+		</nav>
+	</header>
+
+<main role="main" class="flex-shrink-0">
+	<form novalidate name="PasuMarketForm" method="post">
+
+        <div class="container margintop100">
+
+   
+
+            <div class="row justify-content-center msearch-row">
+
+                <div class="col-md-6 col-lg-6">
+
+   
+
+               
+
+   
+
+    <%
+
+        BlockchainData_info = JSON.parse(data.BlockchainData_info)
+
+    %>
+
+               
+
+   
+
+                    <div class="card signin-card margintop20 ">
+
+                        <div class="card-header signin-card-header" style="color: #187010b5;">
+
+                            Verification Information
+
+                        </div>
+
+                        <div class="card-body signin-card-body">
+
+   
+
+                            <table class="table table-sm table-bordered">
+
+                              <tbody>
+
+                                <tr>
+
+                                  <td width="40%" class="veriflist-table-td-l">Verifier Name</td>
+
+                                  <td width="50%" class="veriflist-table-td-r">
+
+                                    <%=BlockchainData_info.verifierName%>
+
+                                  </td>
+
+                                </tr>
+
+                                <tr>
+
+                                  <td width="40%" class="veriflist-table-td-l">Verified date and time</td>
+
+                                  <td width="50%" class="veriflist-table-td-r">
+
+                                    <script>
+
+                                        const verifiedDate = new Date("<%= BlockchainData_info.verifiedDate %>");
+
+                                        const formattedDate = verifiedDate.toLocaleDateString();
+
+                                        const formattedTime = verifiedDate.toLocaleTimeString();
+
+                                        document.write(formattedDate + " " + formattedTime);
+
+                                      </script>                               </td>
+
+                                </tr>
+
+                           
+
+                              </tbody>
+
+                            </table>
+
+   
+
+                        </div>
+
+                    </div>
+
+   
+
+           
+
+                </div>
+
+            </div>
+
+   
+
+        </div>
+
+    </form>
+<form novalidate name="PasuMarketForm" method="post">
+	<div class="container margintop100">
+
+		<div class="row justify-content-center msearch-row">
+			<div class="col-md-6 col-lg-6">
+
+			
+
+<%
+	BlockchainData_info = JSON.parse(data.BlockchainData_info)
+%>
+			
+
+				<div class="card signin-card margintop20">
+					<div class="card-header signin-card-header">
+						Pet Description
+					</div>
+					<div class="card-body signin-card-body">
+
+						<table class="table table-sm table-bordered">
+						  <tbody>
+							<tr>
+								<td width="40%" class="veriflist-table-td-l">Breed</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Breed%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Colour</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Colour%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Gender</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Sex%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Age</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Age%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Weight</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Weight%>
+								</td>
+							  </tr>
+							<tr>
+							  <td width="40%" class="veriflist-table-td-l">Activeness</td>
+							  <td width="50%" class="veriflist-table-td-r">
+								<%=BlockchainData_info.Activeness%>
+							  </td>
+							</tr>
+							<tr>
+								<td width="40%" class="veriflist-table-td-l">Temperament</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.Temperament%>
+								</td>
+							  </tr>
+
+							
+							
+							<tr>
+								<td width="40%" class="veriflist-table-td-l">Last Vaccination Name</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.VaccinationName%>
+								</td>
+							  </tr><tr>
+								<td width="40%" class="veriflist-table-td-l">Last Vaccination Date</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.VaccinationDate%>
+								</td>
+							  </tr>
+							 
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Owner Name</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.OwnerName%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Owner Address</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.OwnerAddress%>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="40%" class="veriflist-table-td-l">Owner Number</td>
+								<td width="50%" class="veriflist-table-td-r">
+								  <%=BlockchainData_info.OwnerNumber%>
+								</td>
+							  </tr>
+							
+							
+							
+							
+						
+
+						  </tbody>
+						</table>
+
+					</div>
+				</div>
+
+		
+			</div>
+		</div>
+
+	</div>
+</form>
+</main>
+
+<!-- FileView Modal Starts here -->
+
+<div class="modal fade" id="FileViewModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="row justify-content-center">
+		<div class="col-lg-6 col-md-6 text-center">
+
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-body" id="FileViewModelBody">
+					
+			  </div>
+			  <div class="modal-footer model-add-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		  
+		</div>
+	</div>
+</div>
+
+<!-- FileView Modal Ends here -->
+
+<!-- Spinner Modal Starts here -->
+
+<div class="modal fade" id="SpinnerModal" tabindex="-1" aria-labelledby="SpinnerModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pm-card-01-header">We are writing verification information into Blockchain.</div>
+		<div class="pm-card-01-header margintop15">Please Wait ....</div>
+		<div class="uploadspinner">
+			<div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>		
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Spinner Modal Ends here -->
+
+<footer class="footer mt-auto myfooter">
+	<% include footer %>
+</footer>
+
+
+<script src="../../public/js/jquery-3.5.1.slim.min.js"></script>
+<script src="../../public/js/popper.min.js"></script>
+<script src="../../public/js/bootstrap.min.js"></script>
+<script src="../../public/sweetalert2/sweetalert2.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+.Wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Wishlist1 {
+  width: 350px;
+  height: 500px;
+  border-radius: 8px;
+  margin-top: -100px;
+}
+
+.Wishcard {
+  width: 95%;
+  height: 110px;
+  border: 1px solid #b6b5b5;
+  margin: auto;
+}
+
+.wishimg {
+  max-width: 70px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.Wishcard1 {
+  display: flex;
+  align-items: center;
+}
+
+.Wishttext {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.wishtext1 {
+  color: rgb(24, 24, 90);
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: -100px;
+}
+
+.wishtext2 {
+  margin-top: 0;
+  color: #333;
+  margin-left: -40px;
+
+}
+
+.WishTEXT {
+  display: flex;
+  flex-direction: column;
+}
+
+.wishtext3 {
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+}
+
+.viewbutwish {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  margin-left: auto;
+}
+
+
+.viewbutwish:hover{
+  position: relative;
+  padding: 5px 10px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  color:white;
+  cursor: pointer;
+
+}
+

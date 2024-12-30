@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#002f34">
+    <title>PetChain  - a blockchain enabled pet marketplace</title>
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css">
+</head>
+
+<script>
+    function verifyProperty(objectId) {
+        // Open the verify-form using the object ID
+        window.open('/verify-form/' + objectId);
+    }
+</script>
+
+
+<body class="d-flex flex-column bodyh100 bglight">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+            <div class="container">
+				<% include verifHeader %>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row justify-content-center msearch-row">
+        <div class="col-md-10 col-lg-10">
+            <div class="card signin-card">
+                <div class="card-header signin-card-header">
+                    Verification List
+                </div>
+                <div class="card-body signin-card-body">
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td width="10%" class="veriflist-table-td-h"> Category</td>
+                                <td width="25%" class="veriflist-table-td-h">Name</td>
+                                <!-- <td width="30%" class="veriflist-table-td-h">ID</td> -->
+                                <td width="25%" class="veriflist-table-td-h">Location</td>
+
+                                <td width="15%" class="veriflist-table-td-h">Verify status</td>
+                                <td width="15%" class="veriflist-table-td-h">View</td>
+
+                                <td width="15%" class="veriflist-table-td-h">Verify</td>
+
+                            </tr>
+                            <% data.forEach(function(item) { %>
+                              <% if (item.verifyStatus === 'not verified' && item.submittedForVerification === 'submitted') { %>
+                                <tr>
+                                  <td align="center"><%= item.category %></td>
+                                  <td align="center"><%= item.name %></td>
+                                  <!-- <td align="center"><%= item._id %></td> -->
+                                  <td align="center"><%= item.location %></td>
+                                  <td align="center"><%= item.verifyStatus %></td>
+                                  <td align="center">
+                                    <button type="button" class="btn btn-sm pm-btn" onclick="window.open('http://43.204.148.111:3002/sellerdescription/<%= item._id %>', '_blank')">
+                                      View
+                                    </button>
+                                  </td>
+                                  <td align="center">
+                                    <% if (item.verifyStatus === 'verified') { %>
+                                      <button type="button" class="btn btn-sm pm-btn" disabled>
+                                        Verified
+                                      </button>
+                                    <% } else { %>
+                                      <button type="button" class="btn btn-sm pm-btn" onclick="verifyProperty('<%= item._id %>')">
+                                        Verify
+                                      </button>
+                                    <% } %>
+                                  </td>
+                                </tr>
+                              <% } %>
+                            <% }); %>
+                            
+                              
+                                                    
+                         </tbody> 
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="hdnPostID" value="" />
+    <input type="hidden" name="hdnCategoryTable" value="" />
+
+    <footer class="footer mt-auto myfooter">
+		<% include footer %>    </footer>
+
+    <script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../public/js/popper.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/sweetalert2/sweetalert2.min.js"></script>
+    <script src="../public/js/axios.min.js"></script>
+
+
+</body>
+
+</html>

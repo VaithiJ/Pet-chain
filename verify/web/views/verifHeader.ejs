@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#002f34">
+    <title>PetChain  - a blockchain enabled pet marketplace</title>
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css">
+</head>
+
+<body class="d-flex flex-column bodyh100 bglight">
+<header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <!-- Add the HTML code for the brand here -->
+            <div class="pmbrand">
+                <a class="navbar-brand stretched-link" href="/">
+                    <img style="width:100%;height: 70px;" src="../public/images/pc.png">
+                    <span class="logo-market"></span>
+                </a>
+                <div class="logobyline">Buy Verified Pets</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-justify menuicon"></i>
+            </button>
+            <!-- Add the HTML code for the navigation links here -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="logoutLink" class="nav-link" href="#">Log Out</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/verif-register">Register</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/verif-veriflist">Verification List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Rest of your HTML content goes here -->
+
+<footer class="footer mt-auto myfooter">
+    <!-- Add the HTML code for the footer here -->
+</footer>
+
+<script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to clear the "verifier_sessionId" cookie
+        function clearCookie(name) {
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        // Find the "Log Out" link by its ID
+        const logoutLink = document.getElementById("logoutLink");
+
+        // Add a click event listener to the "Log Out" link
+        logoutLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the link from navigating to the href
+
+            // Clear the "verifier_sessionId" cookie
+            clearCookie("verifier_sessionId");
+
+            // Redirect to the "verification" page (replace with your desired URL)
+            window.location.href = "/verification";
+        });
+    });
+</script>
+
+</body>
+</html>

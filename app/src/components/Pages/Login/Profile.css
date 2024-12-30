@@ -1,0 +1,160 @@
+.Profilediv {
+  /* background-color: #f9f9fa; */
+}
+
+.Profilediv1 {
+  width: 600px;
+  height: 400px;
+  /* background-color: aqua; */
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.LeftSection {
+  flex-basis: 40%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f29263),
+    to(#ee5a6f)
+  );
+  background: linear-gradient(to right, #ee5a6f, #f29263);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.RightSection {
+  flex-basis: 60%;
+  background-color: white;
+}
+
+.CenterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgcontent {
+  border-radius: 50%;
+  width: 100px;
+  display: none;
+}
+
+/* label {
+  cursor: pointer;
+} */
+
+.previewImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.profile-img {
+  text-align: center;
+  margin-top: -50px;
+}
+.profile-img img {
+  width: 130px;
+  height: 100px;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.edit-iicon {
+  color: white;
+  margin-bottom: -20px;
+  cursor: pointer;
+}
+
+.edit-bbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+.profile-f1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.line {
+  width: 90%;
+  border: none;
+  border-top: 1px solid #393939;
+  margin-top: -10px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-input {
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  margin-top: -10px;
+  margin-left: 40px;
+  color: RGB(145, 154, 163);
+}
+
+.email-input {
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  margin-top: -10px;
+  margin-left: 40px;
+  color: RGB(145, 154, 163);
+}

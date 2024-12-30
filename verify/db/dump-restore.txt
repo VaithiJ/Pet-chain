@@ -1,0 +1,3 @@
+mongodump --uri="mongodb+srv://pasumongo:pasumongo1720@cluster-v1.imwbj.mongodb.net" --db=pasudbv1 --out=/backup/pasudbdump
+
+mongorestore --uri="mongodb+srv://pasumongo:pasumongo1720@cluster-v1.imwbj.mongodb.net" --db=pasuchain F:\Programs\mongodbtools\backup\pasudbdump\pasudbv1

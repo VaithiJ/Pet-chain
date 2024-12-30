@@ -1,0 +1,35 @@
+.bodddy {
+    background: #111;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-wrapper {
+    max-width: 200px; /* Adjust the value to limit the width */
+    /* margin: 0 auto; Center the component horizontally */
+    margin-left: 500px;
+
+  }
+  .swiper {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin-top: 90px;
+    margin-left: -570px;
+  }
+  
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 300px;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0006);
+  }

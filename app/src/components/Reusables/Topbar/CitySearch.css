@@ -1,0 +1,115 @@
+
+
+/* CitySearch.css */
+/* CitySearchModal.css */
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+}
+
+.modal-content {
+  background-color: white;
+  border: 0.666667px solid rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 350px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+
+
+
+.city1 {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+    /* outline: rgb(46, 5, 78) none 0px; */
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    /* border: 0.666667px solid rgb(242, 243, 245); */
+    /* margin-top: 300px; */
+
+  }
+  
+  .container12 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px; /* Height of the container */
+    padding: 0 10px; /* Add padding around the elements inside the container */
+  }
+  
+  .search-input1 {
+    top: 20%;
+    left: 25%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    border: 0.666667px solid rgb(242, 243, 245);
+    border-radius: 6px;
+    color: rgb(46, 5, 78);
+    font-family: futura-medium;
+    font-size: 14px;
+    height: 15px;
+    outline: rgb(46, 5, 78) none 0px;
+    padding-left: 16px;
+    width: 500px;
+    overflow: visible;
+    line-height: 16.1px;
+    margin: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  /* Additional styles for the "Select city" heading */
+  .container12 h1 {
+    margin: 0; /* Remove default margin */
+    padding-right: 10px; /* Add spacing between "Select city" and the search input */
+  }
+  
+  .search-popup{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+  }
+
+  .pac-container {
+    margin-top: 5px;  
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index:9999;
+  }
+
+  .locationimage{
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .locationimage1{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .ximage{
+    margin-left: 20px;
+    margin-top: 5px;
+  }

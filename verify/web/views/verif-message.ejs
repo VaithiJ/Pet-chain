@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+	<meta name="theme-color" content="#002f34">
+    <title>PetChain  - a blockchain enabled pet marketplace</title>
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css">
+
+<script>
+
+function validate()
+{
+
+/*
+
+M01 == Unable to reach server. Please try after sometime.
+OTP01 == OTP is not valid.
+
+*/
+
+}
+
+function regverify()
+{
+	var Frm = document.PasuMarketForm;
+	Frm.action="/postad-regverify";
+	Frm.submit();
+}
+
+</script>
+	
+</head>
+
+<body class="d-flex flex-column bodyh100 bglight">
+    
+<header>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+		<div class="container">
+			<% include verif-header %>
+		</div>
+	</nav>
+</header>
+
+<main role="main" class="flex-shrink-0">
+<form name="PasuMarketForm" method="post">
+	<div class="container header-container">
+
+		<div class="row justify-content-center msearch-row">
+			<div class="col-md-5 col-lg-5">
+
+				<div class="card signin-card">
+					<div class="card-body signin-card-body">
+						<div class="row justify-content-center">
+							<div class="col-11">
+								<div class="w-100">
+									<b><%=data.MessageDes%></b>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer signin-card-footer">
+						<div class="MessageBtnDiv">
+
+<%
+	switch(data.MessageType)
+	{
+		case "M01":
+%>
+	<a class="btn pm-btn btn-width-85p" href="/" role="button"><%=pmi18n("Message").Home%></a>
+<%
+			break;
+		case "OTP01":
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/login-request" role="button"><%=pmi18n("Message").ResendOTP%></a> 
+		</div>
+		<div class="col-md-12 col-lg-12">
+			&nbsp;
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/" role="button"><%=pmi18n("Message").Home%></a>
+		</div>
+	</div>
+<%
+			break;
+		case "loginreq": 
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/login-request" role="button"><%=pmi18n("Message").EnterMobileNo%></a>
+		</div>
+		<div class="col-md-12 col-lg-12">
+			&nbsp;
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/" role="button"><%=pmi18n("Message").Home%></a>
+		</div>
+	</div>
+<%
+			break;
+		case "PostAdSuccess":
+%>
+	<div class="row reqverificationrow">
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo">You can use our verfication service to verify and assess your livestock. Our Pasumarket representative will come and check medical and vaccination certificates and evaluate your livestock in person.</p>
+			<input type="hidden" name="hdnPostID" value="<%=data.PostID%>">
+			<input type="hidden" name="hdnCategoryTable" value="<%=data.CategoryTable%>">
+			<button type="button" class="btn pm-btn btn-width-85p reqverificationbtn" onclick="regverify()">
+				<%=pmi18n("Message").ReqVerification%>
+			</button>
+		</div>
+	</div>
+<%
+			break;
+		case "RegVerification":
+%>
+	<div class="row reqverificationrow">
+		<%
+			if(data.WriteStatus.txstatus)
+			{
+		%>
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo">Verification process successfully initiated. Our Pasumarket representative will come and check medical and vaccination certificates and evaluate your livestock in person.</p>
+			<p class="reqverificationinfo">Find below the Blockchain transaction hash. You can click on the transaction hash to verify transaction in blockchain explorer.</p>
+			<p class="reqverificationinfo"><a class="heading-h2-a" target="_blank" href="<%=data.BlockchainExplorerURL%><%=data.WriteStatus.txhash%>"><%=data.WriteStatus.txhash%></a></p>
+		</div>
+		<%
+			}
+			else
+			{
+		%>
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo">Unable to initiate Verification process. Contact Adminsitrator.</p>
+		</div>
+		<%
+			}
+		%>
+	</div>
+<%
+			break;
+		case "UpdateVerification":
+%>
+	<div class="row reqverificationrow">
+		<%
+			if(data.WriteStatus.txstatus)
+			{
+		%>
+
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo">Verification information successfully written into Blockchain.</p>
+			<p class="reqverificationinfo">Blockchain transaction hash is : <%=data.WriteStatus.txhash%></p>
+
+			<!--<p class="reqverificationinfo"><a class="heading-h2-a" target="_blank" href="<%=data.BlockchainExplorerURL%><%=data.WriteStatus.txhash%>"><%=data.WriteStatus.txhash%></a></p>-->
+			<p>&nbsp;</p>
+			<a class="btn pm-btn btn-width-85p" href="/verif-veriflist" role="button">Verification List</a>
+		</div>
+		<%
+			}
+			else
+			{
+		%>
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo">Unable to complete Verification process. Contact Adminsitrator.</p>
+		</div>
+		<%
+			}
+		%>
+	</div>
+
+<%
+			break;
+		case "AdCanceled":
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/myads" role="button"><%=pmi18n("Message").ViewMyAd%></a> 
+		</div>
+		<div class="col-md-12 col-lg-12">
+			&nbsp;
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/" role="button"><%=pmi18n("Message").Home%></a>
+		</div>
+	</div>
+<%
+			break;
+		case "VerifAgentRegError":
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<p class="reqverificationinfo"><%=data.MessageDes%></p>
+		</div>
+	</div>
+<%
+			break;
+		case "VerifAgentRegSuccess":
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			&nbsp;
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/verification" role="button">Login</a>
+		</div>
+	</div>
+<%
+			break;
+		case "VerifAgentMobileExists":
+%>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			&nbsp;
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<a class="btn pm-btn btn-width-85p" href="/verification" role="button">Login</a>
+		</div>
+	</div>
+
+<%		
+	}
+%>
+
+					</div>
+				</div>
+			
+			</div>
+		</div>
+
+	</div>
+</form>
+</main>
+
+<footer class="footer mt-auto myfooter">
+	<% include footer %>
+</footer>
+
+
+<script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/sweetalert2/sweetalert2.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,790 @@
+.containerr {
+  position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 0, 0);
+    left: 40px;
+    width: 342px;
+    border-radius: 10px;
+
+  }
+  .containerrr {
+    position: relative;
+      justify-content: center;
+      align-items: center;
+      left: 40px;
+      width: 342px;
+      border-radius: 10px;
+  
+    }
+    @media (max-width: 768px) {
+      .containerr,
+      .containerrr {
+        width: 100%;
+        left: 0;
+      }
+
+      .petc {
+        display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: -50px; /* Decrease the gap between each .petttcard */
+      width: 1200px;
+      height: 1200px;
+      }
+
+      .car-image{}
+    }
+    
+    /* Add more media queries for other breakpoints as needed */
+    
+    .petc {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: -50px; /* Decrease the gap between each .petttcard */
+      width: 1200px;
+      height: 1200px;
+    }
+    
+    /* Add more existing styles */
+    
+    /* Media query for screens with a maximum width of 768px */
+   
+    
+    /* Add more media queries for other breakpoints as needed */
+    
+    .range-container {
+      position: relative;
+      width: 300px;
+      height: 1060px;
+      top: -20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 950px 0px 0px;
+      box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Add more existing styles */
+    
+    /* Media query for screens with a maximum width of 768px */
+    @media (max-width: 768px) {
+      .range-container {
+        width: 100%;
+        margin: 20px auto;
+        right: 0;
+        left: 0;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+      
+
+
+  .petc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: -50px; /* Decrease the gap between each .petttcard */
+    width: 1200px;
+    height: 1200px;
+  }
+  @media (max-width: 768px) {
+    .petc {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+    }
+    .pettt-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-gap: 50px;
+      max-height: 100px;
+      position: relative;
+      top: 680px;
+  
+      margin-left: -400px;
+    }
+    .extr{
+      font-family:"Nunito",sans-serif;
+      margin-top: 60px !important;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+      font-size: 18px !important;
+      height: 60px !important;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 300px !important;
+      position: relative;
+      left: 30px !important;
+      background-color: red;
+    }
+
+    .lineline{
+      width:420px !important;
+      background-color: red;
+      height: 2px;
+      position: relative;
+      top: -0px !important;
+      left:30px !important
+    
+    
+    }
+
+    .linelinee{
+      width:420px !important ;
+      background-color: red;
+      height: 2px;
+      position: relative;
+      top: 1px !important;
+      left:30px !important
+    }
+
+    .dogwalk{
+      width: 200px !important;
+      position: relative;
+      top: 100px !important;
+    }
+
+    .filter-toggle{
+      position: relative;
+      left: -430px !important;
+    }
+    
+  }
+
+  
+    .range-container {
+      position: relative;
+      width: 300px;
+      height: 1060px;
+      top: -20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 950px 0px 0px;
+      box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3); 
+    }
+  
+  .range-title1{
+    /* style={{fontSize:"26px", position:"relative", top:"-20px", fontFamily:"Nunito", ba}} */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    top:-50px;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    width: 325px;
+    left: -23px;
+    border-radius: 10px;
+  }
+  .range-title {
+    
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: Poppins;
+    position: relative;
+  }
+
+  .dogwalk {
+    position: absolute; /* Position the image */
+    top: 70px;
+    width: 240px;
+    animation: slideRight 10s linear infinite; /* Apply the animation */
+    z-index: -1;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      left: -200px; /* Initial position off the left edge */
+    }
+    100% {
+      left: calc(90%); /* Move to the right edge */
+    }
+  }
+  .range-values {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    font-family: Poppins;
+  }
+  
+  .range-track {
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2.5px;
+    color: #000000;
+  }
+
+  .range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #888;
+    border-radius: 50%;
+    cursor: grab;
+    transition: background-color 0.2s ease;
+  }
+  
+  .range-thumb.dragged {
+    background-color: #000000;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  .search-container {
+    margin-top: 30px;
+    font-family: Poppins;
+  }
+  
+  .search-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .value {
+    margin: 0px 0px 0px 250px;
+    color: #000000;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  
+  .dot {
+    color: #000000;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  
+  .search-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .top-brands {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .brand-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .brand-name {
+    margin-left: 5px;
+  }
+  
+  .brand-count {
+    margin-left: 5px;
+    color: #777;
+    font-size: 12px;
+  }
+  
+  .year-container {
+    margin-top: 30px;
+  }
+  
+  .year-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: Poppins;
+  }
+  
+  .year-radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: Poppins;
+  }
+  
+  .year-radio-text {
+    margin-left: 5px;
+  }
+  
+  .search-input {
+    width: 70%;
+    height: 30px;
+    padding: 5px 35px 5px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .search-icon {
+    position: relative;
+    top: 13px;
+    left: -30px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #777;
+    cursor: pointer;
+  }
+  
+  .type {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: Poppins;
+  }
+  
+  .transmission-label {
+    margin: 0px 0px 0px 0px;
+    font-family: Poppins;
+  }
+  
+  .year-dropdown {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .year-dropdown option {
+    font-size: 16px;
+  }
+  .pettt-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    max-height: 100px;
+    position: relative;
+    top: 680px;
+
+    margin-left: -400px;
+  }
+  
+  .petttt-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-height: 100px;
+    position: relative;
+    top: 680px;
+  }
+  .pettttt-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    max-height: 100px;
+    position: relative;
+    top: 680px;
+    left: -290px;
+  }
+  .car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+    position: relative;
+    top: -630px;
+    left: 400px;
+    
+
+
+  }
+
+  .close-icon {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+
+
+  .toggle-button{
+    position: relative;
+    left: 1200px;
+    top: -82px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+    cursor: pointer;
+  }
+
+  .filter-icon{
+    font-size: 10px;
+  }
+
+  .toggle-button:hover{
+    background-color: red;
+    color: white;
+  }
+
+  .filter-popup {
+    position: fixed;
+    z-index: 1000;
+   top: 0;
+    right: 0;
+margin-left: -330px;
+    width: 360px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    
+  }
+  
+  .filter-popup.hidden {
+    transform: translateX(100%);
+  }
+  
+
+
+  .extr{
+    font-family:"Nunito",sans-serif;
+   margin-top: 82px;
+   color: rgb(255, 255, 255);
+   border-radius: 10px;
+   font-size: 30px;
+   height: 50px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   width: 660px;
+   position: relative;
+   left: 350px;
+   background-color: red;
+  }
+
+  .lineline{
+    width:1300px;
+    background-color: red;
+    height: 2px;
+    position: relative;
+    top: -30px;
+    left:40px
+  }
+  
+  .linelinee{
+    width:1300px;
+    background-color: red;
+    height: 2px;
+    position: relative;
+    top: -29px;
+    left:40px
+  }
+  @media (min-width: 768px) {
+    .car-card {
+      flex-basis: calc(33.33% - 20px);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  .car-image {
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    cursor: pointer;
+width: 250px; 
+height: 100px;
+ }
+
+ .blurred-image {
+  filter: blur(3px);
+}
+.asdf{
+  box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+position: relative;
+top: 0px;
+width: 190px;
+background-color: #ff0000;
+left:20px;
+border-radius: 10px;
+cursor: pointer;
+
+}
+.popup {
+  position: absolute;
+  margin-top: 20px;
+  top: 0;
+  left: -3;
+  width: 96%;
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.popup:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+ .check-icon {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+/* 
+  .car-image:hover{
+    border: 5px solid rgb(42, 66, 199);
+    transition: all 0.2s ease;
+
+  } */
+  
+  .car-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position:"relative";
+  
+  }
+  
+  .car-titlee {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #333;
+    position:"relative";
+    margin-top: -30px;
+  }
+  
+  .car-info {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #555;
+    position:"relative";
+  
+  }
+  
+  .car-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #ff0000;
+    position:"relative";
+  
+  }
+  
+  .car-location {
+    font-size: 14px;
+    margin: 0;
+    font-family: Poppins;
+    color: #555;
+    position:"relative";
+  }
+  
+  .car-card p {
+    margin: 0;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .heart-icon:hover {
+   
+    color: rgb(255, 0, 0);
+  }
+  .car-details {
+    padding: 15px;
+    line-height: 1.4;
+  }
+  
+  .car-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .car-info,
+  .car-location {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .rads{
+    /* style={{display:"flex", flexDirection:"row", gap:"-100px"}}; */
+    display: flex;
+    flex-direction: row;
+ 
+    
+  }
+  
+  .car-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  .car-info,
+  .car-location,
+  .car-price {
+    font-family: Poppins;
+  }
+  
+  .location-icon{
+    position: relative;
+    right:70px;
+    top: 27px;
+  
+  }
+  .car-amount-line {
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+  }
+  
+  
+  
+  .apply{
+      background-color: red;
+      font-family: 'Nunito', sans-serif;
+  margin-top: 30px;
+   color: white;
+      font-size: 16px;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+  }
+    
+    .apply:hover {
+      background-color: darkred;
+    }
+    .heart-iccon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+color: red;
+    }
+
+
+    .pett-container {
+position: relative;
+left: 800px;
+top: -400px;
+    }
+    .petty-details {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      left: 400px;
+      margin-left: 100px; 
+      width: calc(33.33% - 10px)
+    }
+/*     
+    .pett-card {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;  
+      } */
+    
+    .pett-cardd {
+    
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+
+    @media (max-width:360px) {
+      .containeeeerr{
+        margin-left: -50px ;
+      }
+
+      .lineline{
+        margin-left: -50px;
+      }
+
+      .linelinee{
+        margin-left: -50px;
+      }
+
+      .filter-toggle{
+        top: -30px;
+        left: -580px !important;
+      }
+    }
+    

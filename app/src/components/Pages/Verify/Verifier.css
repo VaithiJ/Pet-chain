@@ -1,0 +1,197 @@
+.container {
+    position: relative;
+    top:100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+      flex-direction: row;
+  
+    }
+
+    
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    
+    .carrr-carrrd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+      margin-left: 400px;
+      margin-top: -580px;
+      position: relative;
+      right:60px;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .carrr-carrrd:hover {
+      transform: translateY(-5px);
+    }
+    
+    .carrr-image {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 5px 5px 0 0;
+      position:"relative";
+      cursor: pointer;
+    
+    }
+  
+    .carrr-image:hover{
+      border: 3px solid rgb(95, 95, 95);
+    }
+    
+    .carrr-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      position:"relative";
+    
+    }
+    
+    .carrr-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: -30px;
+      margin-bottom: 10px;
+      font-family: Poppins;
+      color: #333;
+      position:"relative";
+    
+    }
+    
+    .carrr-info {
+        position: relative;
+        top:-100px;
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 10px;
+      font-family: Poppins;
+      color: #555;
+      position:"relative";
+    
+    }
+    
+    .carrr-price {
+        position: relative;
+        top:-10px;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+      margin-bottom: 110px;
+      font-family: Poppins;
+      color: #000000;
+      position:"relative";
+    
+    }
+    
+    .carrr-location {
+      font-size: 14px;
+      margin: 0;
+      font-family: Poppins;
+      color: #555;
+      position:"relative";
+    }
+    .verifybuttton{
+        background-color: red;
+        font-family: 'Nunito', sans-serif;
+position: relative;
+top:10px;
+     color: white;
+        font-size: 14px;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    .verifybuttton:hover{
+        background-color: darkred;
+
+    }
+    .carrr-carrrd p {
+      margin: 0;
+    }
+    
+   
+    .carrr-details {
+      padding: 15px;
+      line-height: 1.4;
+    }
+    
+    .carrr-title {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    .carrr-info,
+    .carrr-location {
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    
+    .carrr-price {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color:black;
+    }
+    
+    .carrr-info,
+    .carrr-location,
+    .carrr-price {
+      font-family: Poppins;
+    }
+    
+    .location-icon{
+      position: relative;
+      right:70px;
+      top: 27px;
+    
+    }
+    .carrr-amount-line {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ccc;
+    }
+    
+    
+    
+    .apply{
+        background-color: red;
+        font-family: 'Nunito', sans-serif;
+    margin-top: 30px;
+     color: white;
+        font-size: 16px;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+      
+      .apply:hover {
+        background-color: darkred;
+      }
+      .heart-iccon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+  color: red;
+      }
